@@ -1,0 +1,10 @@
+<div class="container">
+  <!-- Carousel Component -->
+  <app-carousel [slides]="slides"></app-carousel>
+
+  <!-- Slide List Component -->
+  <app-slide-list [slides]="slides" (delete)="deleteSlide($event)"></app-slide-list>
+
+  <!-- Slide Form Component -->
+  <app-slide-form (add)="addSlide($event)"></app-slide-form>
+</div>

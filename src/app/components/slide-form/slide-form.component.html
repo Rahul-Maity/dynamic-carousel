@@ -1,0 +1,17 @@
+<div class="row mt-4">
+    <div class="col">
+      <h3>Add New Slide</h3>
+      <form (ngSubmit)="addSlide()" #slideForm="ngForm">
+        <div class="mb-3">
+          <label for="imageUrl" class="form-label">Image URL:</label>
+          <input type="text" class="form-control" id="imageUrl" name="imageUrl" [(ngModel)]="newSlide.imageUrl" required>
+        </div>
+        <div class="mb-3">
+          <label for="caption" class="form-label">Caption:</label>
+          <input type="text" class="form-control" id="caption" name="caption" [(ngModel)]="newSlide.caption" required>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="slideForm.invalid">Add Slide</button>
+      </form>
+    </div>
+  </div>
+  

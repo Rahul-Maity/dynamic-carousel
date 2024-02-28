@@ -1,0 +1,12 @@
+.list-group-item {
+    width: fit-content;
+    border: none;
+    list-style-type: disc;
+  
+    .delete-btn {
+      margin-left: 12px;
+      background-color: transparent;
+      border: none;
+    }
+  }
+  

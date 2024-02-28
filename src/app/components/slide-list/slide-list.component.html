@@ -1,0 +1,14 @@
+<div class="row mt-4">
+    <div class="col">
+      <h3>Added Slides</h3>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let slide of slides; let i = index">
+          <div class="bullet-item">
+            <span> slide {{i+1}}</span>
+            <button class="delete-btn" (click)="deleteSlide(i)"><i class="fas fa-trash"></i></button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
