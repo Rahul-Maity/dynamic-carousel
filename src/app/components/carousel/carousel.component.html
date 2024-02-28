@@ -21,6 +21,9 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" *ngFor="let slide of slides; let i = index" [attr.data-bs-slide-to]="i" [class.active]="i === 0"></li>
+      </ol>
     </div>
   </div>
   

@@ -25,4 +25,7 @@
     border-width: 110px; /* Increase the border width to make the arrows thicker */
   }
 
-  
+  .carousel-indicators {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
